@@ -1,7 +1,7 @@
 {
   "name": "test-soyyo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test ingreso soyyo",
   "main": "index.js",
   "type": "module",
   "scripts": {
