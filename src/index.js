@@ -17,18 +17,27 @@ app.get('/entities/:startId/:endId', async (req, res) => {
     }
 
     try{
-        const response = await axios.get(`https://f56c0ao48b.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/${startId}`);
-        console.log(response);
+        const response = await axios.get(`${endpoint}${startId}`);
         const entities = [];
-        let entity =response.data;
+        let entity = response.data;
+        //res.json(entity.data.entityId);
 
-        while (entity.entityId <= endId){
+        while (entity.data.entityId >= startId && entity.data.entityId <= endId){
+            //console.log("Enter in the loop");
             entities.push(entity);
-            response = await axios.get(`https://f56c0ao48b.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/${entity.entityId + 1}`);
-            entity = response.data;
+            const nextId = entity.data.entityId + 1;
+            const nextResponse = await axios.get(`${endpoint}${nextId}`);
+
+            if(!nextResponse.data || entity.entityId >= endId){
+                break;
+            }
+
+            entity = nextResponse.data;
+            //console.log(entity);
         }
 
-        entities.sort((a, b) => a.name.localeCompare(b.name));
+        //res.json(entities);
+        entities.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
         res.json(entities);
     }
