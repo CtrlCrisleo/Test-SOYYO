@@ -1,10 +1,11 @@
 # Test-SOYYO
 
 1. Confirmar que tengamos instalado Node.js en el equipo: node -v
-2. Instalar la bibliotexa de JavaScript axios: npm i axios
-3. Instalar el framework de aplicaciones web para Node.js express: npm i express
-4. Instalar la herramienta Nodemon como una dependencia de desarrollo: npm i nodemon -D
-5. Iniciar el servidor de desarrollo de la aplicación Node.js: npm run dev
+2. Instalar la bibliotexa de JavaScript Axios: npm i axios
+3. Instalar el framework de aplicaciones web para Node.js Express: npm i express
+4. Instalar el middleware para Node.js Morgan: npm i morgan
+5. Instalar la herramienta Nodemon como una dependencia de desarrollo: npm i nodemon -D
+6. Iniciar el servidor de desarrollo de la aplicación Node.js: npm run dev
 
 Ejecución:
 
