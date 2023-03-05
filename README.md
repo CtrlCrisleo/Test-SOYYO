@@ -1,6 +1,6 @@
 # Test-SOYYO
 
-[[Node.js](https://img.shields.io/badge/Node.js-v18.14.0-brightgreen)]
+[![Node.js](https://img.shields.io/badge/Node.js-v18.14.0-brightgreen)]
 
 1. Confirmar que tengamos instalado Node.js en el equipo: node -v
 2. Instalar la bibliotexa de JavaScript Axios: npm i axios
