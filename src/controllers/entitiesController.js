@@ -7,6 +7,10 @@ export default {
         const { startId, endId } = req.params;
         const count = parseInt(endId, 10) - parseInt(startId, 10) + 1;
 
+        if (startId >= endId) {
+            return res.status(400).send("Error en validación de datos de entrada");
+        }
+
         if (!Number.isInteger(Number(startId)) || !Number.isInteger(Number(endId))) {
             return res.status(400).send("Error en validación de datos de entrada");
         }
@@ -35,14 +39,14 @@ export default {
             entities.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
             if (entities.length != count) {
-                throw new Error(`No se encontró una entidad válida asociada al rango ${startId} - ${endId}`);
+                throw new Error(`No se encontró información válida en, al menos, una entidad asociada al rango ${startId} - ${endId}`);
             }
 
             res.json(entities);
         }
 
         catch (error) {
-            if (error.message.startsWith('No se encontró una entidad válida asociada al rango')) {
+            if (error.message.startsWith('No se encontró información válida en, al menos, una entidad asociada al rango')) {
                 res.status(404).send(error.message);
             }
             else {
