@@ -2,6 +2,7 @@
 
 ![Node.js](https://img.shields.io/badge/Node.js-v18.14.0-orange)
 ![Axios](https://img.shields.io/badge/Axios-v1.3.4-blue)
+![Express](https://img.shields.io/badge/Express-v4.18.2-blue)
 
 1. Confirmar que tengamos instalado Node.js en el equipo: node -v
 2. Instalar la bibliotexa de JavaScript Axios: npm i axios
