@@ -1,6 +1,6 @@
 # Test-SOYYO
 
-![Node.js](https://img.shields.io/badge/Node.js-v18.14.0-orange)(https://nodejs.org/en/)
+[![Node.js](https://img.shields.io/badge/Node.js-v18.14.0-orange)(https://nodejs.org/en/)]
 ![Axios](https://img.shields.io/badge/Axios-v1.3.4-blue)
 ![Express](https://img.shields.io/badge/Express-v4.18.2-blue)
 
