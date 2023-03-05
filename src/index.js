@@ -1,8 +1,6 @@
-import express from "express";
-import morgan from "morgan";
-import entitiesRoutes from "./routes/entitiesRoutes.js"
-
-const app = express();
+import express from 'express';
+import morgan from 'morgan';
+import app from './app.js';
 
 /*Settings*/
 app.set('port', process.env.PORT || 3000);
@@ -11,9 +9,6 @@ app.set('port', process.env.PORT || 3000);
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-
-/*Routes*/
-app.use('/api/entities', entitiesRoutes);
 
 /*Starting the server*/
 app.listen(app.get('port'), () => {
