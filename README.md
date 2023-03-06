@@ -45,6 +45,8 @@ Dónde:
 
 ## Contenerizar API en Docker
 
+### Ejecución
+
 1. Comando para construir la imagen de Docker `docker run -p 3000:3000 -d co.com.soyyo.entity.filter-dev-1_0_0`
 2. Comando para ver las imágenes de Docker que están almacenadas en el sistema local `docker images`
 3. Comando para ejecutar la imagen de Docker `docker run -p 3000:3000 -d co.com.soyyo.entity.filter-dev-1_0_0`
