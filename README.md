@@ -49,6 +49,7 @@ Dónde:
 * [Axios](https://axios-http.com/) v1.3.4
 * [Express](https://expressjs.com/) v4.18.2
 * [Morgan](https://expressjs.com/en/resources/middleware/morgan.html) v1.10.0
+* [Docker](https://www.docker.com/) v20.10.23
 
 ### Dependencias de desarrollo
 
