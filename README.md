@@ -3,17 +3,17 @@
 ![Status](https://img.shields.io/badge/Status-Finalizado-brigthgreen)
 ![Node.js](https://img.shields.io/badge/Node.js-v18.14.0-blueviolet)
 
-Desarrollo de una API que, dado un rango de códigos de entidades o empresas clientes, genera un listado con las propiedades de cada entidad ordenadas alfabéticamente, según el nombre, de forma ascendente.
+Desarrollo de una API que, dado un rango de códigos de entidades o empresas clientes, genere un listado con las propiedades de cada entidad ordenadas alfabéticamente, según el nombre, de forma ascendente.
 
 ## API - Filtro de consulta de entidades
 
 ### Instalación
 
-1. Confirmar que Node.js esté instalado en el equipo `node -v`
-2. Instalar la biblioteca de JavaScript Axios `npm i axios`
-3. Instalar el framework de aplicaciones web para Node.js Express `npm i express`
-4. Instalar el middleware para Node.js Morgan `npm i morgan`
-5. Instalar la herramienta Nodemon como una dependencia de desarrollo `npm i nodemon -D`
+1. Confirmar que ***Node.js*** esté instalado en el equipo `node -v`
+2. Instalar la biblioteca de JavaScript ***Axios*** `npm i axios`
+3. Instalar el framework de aplicaciones web para Node.js ***Express*** `npm i express`
+4. Instalar el middleware para Node.js ***Morgan*** `npm i morgan`
+5. Instalar la herramienta ***Nodemon*** como una dependencia de desarrollo `npm i nodemon -D`
 
 ### Ejecución:
 
@@ -30,9 +30,9 @@ Dónde:
 
 ### Instalación
 
-1. Instalar el marco de pruebas de JavaScript Jest como una dependencia de desarrollo `npm i jest -D`
-2. Instalar la biblioteca de pruebas de integración de JavaScript Supertest como una dependencia de desarrollo `npm i supertest -D`
-3. Instalar la biblioteca de análisis de argumentos de línea de comandos para aplicaciones Node.js Yargs versión 15.4.1 como una dependencia de desarrollo `npm i yargs@15.4.1 -D`
+1. Instalar el marco de pruebas de JavaScript ***Jest*** como una dependencia de desarrollo `npm i jest -D`
+2. Instalar la biblioteca de pruebas de integración de JavaScript ***Supertest*** como una dependencia de desarrollo `npm i supertest -D`
+3. Instalar la biblioteca de análisis de argumentos de línea de comandos para aplicaciones Node.js ***Yargs*** **versión 15.4.1** como una dependencia de desarrollo `npm i yargs@15.4.1 -D`
 
 ### Ejecución
 
