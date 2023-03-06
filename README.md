@@ -15,7 +15,7 @@ Desarrollo de una API que, dado un rango de códigos de entidades o empresas cli
 4. Instalar el middleware para Node.js ***Morgan*** `npm i morgan`
 5. Instalar la herramienta ***Nodemon*** como una dependencia de desarrollo `npm i nodemon -D`
 
-### Ejecución:
+### Ejecución
 
 1. Iniciar el servidor de desarrollo de la aplicación Node.js `npm run dev`
 2. Desde la herramienta [Postman](https://www.postman.com/) enviar el método `GET` con la siguiente URL:
@@ -42,6 +42,14 @@ Dónde:
 Dónde:
 * `'startCode'` = Valor inicial del rango seleccionado para realizar la consulta.
 * `'endCode'` = Valor final del rango seleccionado para realizar la consulta.
+
+## Contenerizar API en Docker
+
+1. Comando para construir la imagen de Docker `docker run -p 3000:3000 -d co.com.soyyo.entity.filter-dev-1_0_0`
+2. Comando para ver las imágenes de Docker que están almacenadas en el sistema local `docker images`
+3. Comando para ejecutar la imagen de Docker `docker run -p 3000:3000 -d co.com.soyyo.entity.filter-dev-1_0_0`
+
+Realizar las pruebas que se consideren necesarias con las condiciones establecidas en la ***ejecución*** de la ***API - Filtro de consulta de entidades***. 
 
 ## Tecnologías utilizadas
 
