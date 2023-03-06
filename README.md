@@ -23,8 +23,8 @@ Desarrollo de una API que, dado un rango de códigos de entidades o empresas cli
 http://localhost:3000/api/entities/{startCode}/{endCode}
 
 Dónde:
-* `startCode` = Valor inicial del rango seleccionado para realizar la consulta.
-* `endCode` = Valor final del rango seleccionado para realizar la consulta.
+* `{startCode}` = Valor inicial del rango seleccionado para realizar la consulta.
+* `{endCode}` = Valor final del rango seleccionado para realizar la consulta.
 
 ## Unit Test
 
@@ -40,8 +40,8 @@ Dónde:
 2. Comando para ejecución de pruebas con rango de entrada definido `npm test -- --startId='startCode' --endId='endCode'`
 
 Dónde:
-* `startCode` = Valor inicial del rango seleccionado para realizar la consulta.
-* `endCode` = Valor final del rango seleccionado para realizar la consulta.
+* `'startCode'` = Valor inicial del rango seleccionado para realizar la consulta.
+* `'endCode'` = Valor final del rango seleccionado para realizar la consulta.
 
 ## Tecnologías utilizadas
 
@@ -54,5 +54,5 @@ Dónde:
 
 * [Nodemon](https://nodemon.io/) v2.0.21
 * [Jest](https://jestjs.io/) v29.4.3
-* [Supertest]() v6.3.3
+* [Supertest](https://www.npmjs.com/package/supertest) v6.3.3
 * [Yargs](http://yargs.js.org/) v15.4.1
